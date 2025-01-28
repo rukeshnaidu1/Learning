@@ -93,7 +93,7 @@ namespace ConsoleApp7
                 Console.WriteLine("Age Group: {0}", ageGroup.Key); //Each group has a key 
 
                 foreach (Student s in ageGroup) // Each group has inner collection
-                    Console.WriteLine(s.StudentID + ", " + s.StudentName+","+s.Age);
+                    Console.WriteLine(s.StudentID + ", " + s.StudentName+","+s.Age); // not needed this line
             }
             Console.WriteLine("method");
            var results = studentList.Where(s => s.StudentID ==2 || s.StudentID==4).OrderByDescending(s=>s.StudentID);
